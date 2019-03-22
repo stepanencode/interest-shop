@@ -1,0 +1,45 @@
+.comments {
+  width: 800px;
+  margin-top: 30px;
+  text-align: left;
+
+  @media @tablet-medium-width {
+    width: auto;
+  }
+
+  &__header {
+    width: 800px;
+    background-color: @scheme-gray;
+
+    @media @tablet-medium-width {
+      width: auto;
+      // min-width: 100%;
+      // max-width: 100%;
+    }
+  }
+
+  &__all {
+    display: inline-block;
+    font-family: 'Ubuntu-light', sans-serif;
+    font-size: 14px;
+    color: @scheme-darkgray;
+    text-transform: none;
+    font-weight: 300;
+    float: left;
+    padding-left: 11px;
+    margin: 0;
+    line-height: 2.15;
+  }
+
+  &__switch {
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
+  &__image_position {
+      vertical-align: -15%;
+      margin-right: 2px;
+  }
+}

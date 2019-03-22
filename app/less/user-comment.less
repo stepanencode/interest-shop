@@ -1,0 +1,101 @@
+.user-comment {
+  display: flex;
+  margin-top: 40px;
+
+  @media @mobile-large-width {
+    width: auto;
+    margin: 40px 5% 0;
+  }
+
+  &__name {
+    display: inline-block;
+    font-family: 'Ubuntu-bold', sans-serif;
+    font-size: 14px;
+    color: @scheme-dark;
+    font-weight: bold;
+    float: left;
+    margin: 0;
+    padding-bottom: 2px;
+  }
+
+  &__time {
+    display: inline-block;
+    font-family: 'Ubuntu-light', sans-serif;
+    font-size: 14px;
+    color: @scheme-darkgray;
+    font-weight: 300;
+    padding-left: 18px;
+    float: left;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: 'Ubuntu-light', sans-serif;
+    font-size: 14px;
+    color: @scheme-dark;
+    font-weight: 300;
+    width: 644px;
+    line-height: 1.43;
+    margin: 0;
+
+    /* спрятать текст если у более N строк */
+    overflow: hidden;
+    /* для установки '…' в абсолютную позицию */
+    position: relative;
+    /* используйте это значение для расчёта высоты блока */
+    line-height: 1.2em;
+    /* max-height = line-height (1.2) * число строк (5) */
+    max-height: 6.0em;
+    /* исправлиление проблемы когда последнее слово не соединяется с правой стороны */
+    text-align: justify;
+    /* место для многоточия '…' */
+    padding-right: 1em;
+
+    @media @tablet-small-width {
+      width: auto;
+    }
+  }
+
+  &__text:before {
+    /* многоточие в конце */
+    content: '…';
+    /* абсолютное позиционирование */
+    position: absolute;
+    /* установить позицию в правый нижний угол блока */
+    right: 0;
+    bottom: 0;
+  }
+
+  &__text:after {
+    content: "";
+    position: absolute;
+    /* установить позицию в правый нижний угол блока */
+    right: 0;
+    /* установить width и height */
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    /* цвет фона перед блоком */
+    background: white;
+  }
+
+
+
+  &__photo {
+    flex: 0 0 auto;
+    border-radius: 50%;
+    float: left;
+  }
+
+  @media @tablet-width {
+		margin-left: 20px;
+	}
+
+  @media @mobile-small-width {
+    margin-left: 2px;
+  }
+
+  &_top-position {
+    padding-top: 6px;
+  }
+}

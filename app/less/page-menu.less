@@ -1,0 +1,31 @@
+.page-menu {
+  float: left;
+
+  &__item {
+    display: inline-block;
+    font-family: 'Ubuntu-medium', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: @scheme-dark;
+    margin-right: 49px;
+    padding-top: 15px;
+
+    @media @tablet-width {
+      margin-right: 38px;
+    }
+
+    @media @tablet-medium-width {
+      margin-right: 15px;
+    }
+  }
+
+  &__item_active {
+    font-family: 'Ubuntu-bold', sans-serif;
+    font-size: 14px;
+    color: @scheme-blue;
+  }
+
+  @media @mobile-large-width {
+    display: none;
+  }
+}

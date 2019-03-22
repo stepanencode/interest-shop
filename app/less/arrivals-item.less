@@ -1,0 +1,87 @@
+.arrivals-item {
+  background-color: @scheme-white;
+
+  &__1 {
+    width: 570px;
+    height: 570px;
+    background-image: url(../img/desktop/arrivals/chair-blue.png);
+
+    @media @mobile-large-width{
+      display: none;
+    }
+  }
+
+  &__2 {
+    width: 570px;
+    height:270px;
+    background-image: url(../img/desktop/arrivals/bathroom-set.png);
+  }
+
+  &__3 {
+    width: 570px;
+    height:270px;
+    background-image: url(../img/desktop/arrivals/metal-lamp.png);
+    margin-top: 30px;
+
+    @media @tablet-width {
+      display: none;
+    }
+  }
+
+  &__4 {
+    width: 270px;
+    height:270px;
+    background-image: url(../img/desktop/arrivals/clock.png);
+    margin-top: 27px;
+
+    @media @mobile-large-width{
+      margin-top: 0;
+    }
+  }
+
+  &__5 {
+    width: 270px;
+    height:270px;
+    background-image: url(../img/desktop/arrivals/kettle.png);
+    margin-top: 27px;
+  }
+
+  &__6 {
+    width: 570px;
+    height:270px;
+    background-image: url(../img/desktop/arrivals/bed-linen.png);
+    margin-top: 27px;
+
+    @media @tablet-width {
+      display: none;
+    }
+  }
+
+  &__description {
+    width: 150px;
+    padding-top: 17px;
+    margin-left: 20px;
+  }
+
+  &__text {
+    font-family: Ubuntu, sans-serif;;
+    font-size: 18px;
+    text-transform: none;
+    color: @scheme-dark;
+    margin: 0;
+  }
+
+  &__price {
+    font-family: Ubuntu, sans-serif;;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: @scheme-dark;
+    padding-top: 3px;
+    margin: 0;
+
+    &_alignment {
+      padding-top: 5px;
+    }
+  }
+}

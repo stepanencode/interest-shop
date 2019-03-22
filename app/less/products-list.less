@@ -1,0 +1,23 @@
+.products-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+
+  &__item {
+    display: inline;
+
+    a {
+      display: block;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 14px;
+      color: @scheme-dark;
+      padding-top: 6px;
+    }
+  }
+
+  &_desktop {
+    @media @mobile-large-width {
+      display: none;
+    }
+  }
+}

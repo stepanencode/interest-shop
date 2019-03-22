@@ -1,0 +1,38 @@
+.address-shop {
+  width: 370px;
+  height: 150px;
+  background-color: @scheme-white;
+  margin: 0;
+  position: absolute;
+  top: 0;
+
+  @media @mobile-small-width {
+    width: 320px;
+  }
+
+  &__location {
+    display: inline-block;
+  }
+
+  &__image {
+    margin-left: 20px;
+  }
+
+  &__phone,
+  &__mail,
+  &__location {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    color: @scheme-dark;
+    text-transform: none;
+    padding-left: 8px;
+  }
+}
+
+.address-mail,
+.address-location,
+.address-phone {
+  padding-top: 20px;
+}

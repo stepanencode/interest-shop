@@ -1,0 +1,60 @@
+body {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	// line-height: 42px;
+	color: @scheme-dark;
+
+}
+.width-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  clear: both;
+
+	@media @tablet-width {
+		width: auto;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	&:focus {
+		outline: none;
+	}
+}
+
+html {
+	overflow-x:  hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+	display: inline-block;
+	list-style: none;
+}
+
+ul {
+  @media @tablet-small-width {
+    margin: 0;
+  }
+}
+
+p {
+	margin: 0;
+}
+
+.main {
+  font-family: 'Ubuntu', sans-serif;
+  width: auto;
+}
+
+.room-page {
+  @media @tablet-medium-width {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

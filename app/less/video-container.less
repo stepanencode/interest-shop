@@ -1,0 +1,26 @@
+.video-container {
+  background-color: @scheme-gray;
+  padding: 20px;
+
+  @media @tablet-width {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: auto;
+  }
+
+  @media @tablet-small-width {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+  }
+
+  @media @mobile-large-width {
+    max-width: 370px;
+  }
+
+  @media @mobile-small-width {
+    width: auto;
+    padding: 2px;
+  }
+}

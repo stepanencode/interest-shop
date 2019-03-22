@@ -1,0 +1,36 @@
+.pagination {
+  margin-top: 37px;
+
+  &__item {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+
+    &-prev {
+      margin-right: 15px;
+    }
+
+    &-next{
+      margin-left: 15px;
+    }
+
+    &-second,
+    &-third,
+    &-fourth {
+      margin-right: 12px;
+    }
+  }
+
+  &__link {
+    color: @scheme-dark;
+  }
+
+  @media @tablet-width {
+		margin-left: 20px;
+	}
+
+  @media @tablet-medium-width {
+    text-align: center;
+  }
+}

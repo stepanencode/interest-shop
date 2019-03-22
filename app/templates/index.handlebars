@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>interest shop market</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/app.css?v={{timestamp}}">
+		<!-- <link rel="stylesheet" href="app/less/app.less"> -->
+    <!-- <link rel="stylesheet" href="styles/reset.css"> -->
+    <!-- <link rel="stylesheet" href="styles/desktop.css"> -->
+    <!-- <link rel="stylesheet" href="styles/mobile.css"> -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+      <link rel="icon" href="https://image.flaticon.com/icons/svg/1507/1507713.svg"/>
+  </head>
+  <body>
+		<div class="container">
+		  {{>header}}
+		  <main class="main">
+		  	<div class="room-page container">
+          {{>room-catalog}}
+			  	{{>jumbotron}}
+		  	</div>
+			  {{>products}}
+        {{>arrivals}}
+			  {{>projects}}
+			  {{>blog}}
+			  {{>about-us}}
+		  </main>
+		  {{>footer}}
+	  </div>
+		<script src="js/plugins.min.js"></script>
+	  <script src="js/app.js?v={{timestamp}}"></script>
+  </body>
+</html>

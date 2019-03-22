@@ -1,0 +1,19 @@
+.cart-image {
+  &_mobile {
+    display: none;
+
+    @media @mobile-large-width {
+      display: inline;
+    }
+
+    @media @mobile-small-width {
+      display: none;
+    }
+  }
+
+  &_desktop {
+    @media @mobile-large-width {
+      display: none;
+    }
+  }
+}
